@@ -97,6 +97,8 @@ class gen_itd(ope_basic):
         z, nu = self.latobj.znu        
         ervec = np.abs(self.error_scale * nu * z)
         #ervec = self.error_scale*np.exp(nu * z)
+        #print(len(z))
+        #print(len(ervec))
         ndat = len(ervec)      
         ijlst = [[i, j] for i in range(ndat) for j in range(ndat)]
         return np.reshape(np.array( \
