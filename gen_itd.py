@@ -88,7 +88,7 @@ class gen_itd(ope_basic):
         #  output ndata random samples of the data with mean as itd_centralval
         #  and covariance matrix from a built-in model in this class
         #
-        cov = self.power_covariance(s=0.5, beta=1.0)
+        cov = self.power_covariance(s=0.05, beta=1.0)
         return self.itd_syntheticdata_covinput(cov, ndata=ndata, proj=proj)
     
     def power_covariance(self, s=0.0, beta=0.5):

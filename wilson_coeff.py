@@ -58,19 +58,22 @@ class wilson_coeff(functions_predetermined):
         #
         # user-defined correction to log(z)^0 c_n term
         #
-        return self.al_s*np.log(n+1)
+        #return (self.al_s)**2*self.harmonic_1[n] #np.log(n+1)
+        return (self.al_s)**2*np.log(n+1)
 
     def c_artificial_log1(self, n):
         #
         # user-defined correction to log(z)^1 c_n term
         #
-        return self.al_s*np.log(n+1)
+        #return (self.al_s)**2*self.harmonic_1[n] #np.log(n+1)
+        return (self.al_s)**2*np.log(n+1)
 
     def c_artificial_log2(self, n):
         #
         # user-defined correction to log(z)^2 c_n term
         #
-        return self.al_s*np.log(n+1)
+        #return (self.al_s)**2*self.harmonic_1[n] #np.log(n+1)
+        return (self.al_s)**2*np.log(n+1)
 
 #wobj = wilson_coeff(nterms = 20, correction_coeffs = [0.1, 0.05, 0.01],  )
 #wobj.c_model 

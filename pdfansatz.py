@@ -25,7 +25,7 @@ class pdf():
 
     def f(self,
          x):
-        return x**self.alpha*(1.0-x)**self.beta*(1.0+s*np.sqrt(x)+t*x)/self.norm
+        return x**self.alpha*(1.0-x)**self.beta*(1.0+self.s*np.sqrt(x)+self.t*x)/self.norm
     
     def mom(self,
            n):
